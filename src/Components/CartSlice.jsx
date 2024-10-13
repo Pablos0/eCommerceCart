@@ -1,6 +1,10 @@
 
 import { createSlice } from '@reduxjs/toolkit';
 
+const initialState = {
+    cartItems: [],
+};
+
 const CartSlice = createSlice({ // this is initialize with @reduxjs/toolkit and react-redux
     name: 'cart', // this represent the name of the slice
     initialState, // an object representing the initial state of your slice
@@ -39,9 +43,6 @@ const CartSlice = createSlice({ // this is initialize with @reduxjs/toolkit and 
         },
     }
 });
-const initialState = {
-    cartItems: [],
-};
 
 export const {
     addItemToCart,
